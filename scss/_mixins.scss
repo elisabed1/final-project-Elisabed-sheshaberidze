@@ -2,3 +2,21 @@
     max-width: 1255px;
     margin: 0 auto;
 }
+@mixin logo{
+    display: flex;
+   align-items: center;
+    gap: 10px;
+}
+@mixin mylogo{
+    color: #000;
+     font-family: 'Kaisei Decol', serif;font-size: 32px;
+     font-weight: 400;
+}
+@mixin myh{
+    color: #000;
+font-family: Kameron;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}

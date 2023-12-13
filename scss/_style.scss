@@ -1,25 +1,28 @@
 header{
     height: 136px;
     padding-top: 27px;
+    // border: 2px solid red;
     .container{
             @include container;
-            // border: 2px solid red;
             display: flex;
             justify-content: space-between;
+            align-items: center;
+            @media (max-width: 1325px) {
+                max-width: 90%;
+            }
             div{
-                display: flex;
-                align-items: center;
-                gap: 10px;
+                @include logo;
                 h2{
-                    color: #000;
-                    font-family: 'Kaisei Decol', serif;font-size: 32px;
-                    font-weight: 400;
+                    @include mylogo;
                 }
             }
            
             nav{
                 width: 500px;
-                border: 2ps solid rgb(59, 154, 59);
+                // border: 2ps solid rgb(59, 154, 59);
+                @media (max-width: 1065px) {
+                    display: none;
+                }
                 ul{
                     display: flex;
                     justify-content: space-between;
@@ -47,7 +50,61 @@ header{
                 border-radius: 40px;
                 background: rgba(217, 217, 217, 0.50);
                 cursor: pointer;
-
+                @media (max-width: 600px) {
+                    display: none;
+                }
             }
+            .first{
+                @media (max-width: 600px) {
+                    display: none;
+                }
+            }
+            .last{
+                display: none;
+                @media (max-width: 1065px) {
+                    display: inline-flex;
+                }
+            }
+    }
+  }
+
+  section{
+    // border: 2px solid black;
+    background-image: url("../images/akhaltsikhe.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 615px;
+    background-size: cover;
+    h1{
+        // border: 3px dotted green;
+        color: #FFF;
+        text-align: center;
+        font-family: 'Judson', serif;
+        font-size: 70px;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+            }
+  }
+
+
+  footer{
+    width: 100%;
+    height: 430px;
+    flex-shrink: 0;
+    background-color: #E4E4E4;
+    padding: 35px 40px 24px;
+    
+    div{
+        @include logo;
+        h2{
+            @include mylogo;
+        }
+    }
+    h4{
+        @include myh;
+        margin-top: 13px;
     }
   }

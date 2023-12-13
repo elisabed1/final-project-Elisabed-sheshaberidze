@@ -69,6 +69,12 @@ header .container {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1325px) {
+  header .container {
+    max-width: 90%;
+  }
 }
 header .container div {
   display: flex;
@@ -83,7 +89,11 @@ header .container div h2 {
 }
 header .container nav {
   width: 500px;
-  border: 2ps solid rgb(59, 154, 59);
+}
+@media (max-width: 1065px) {
+  header .container nav {
+    display: none;
+  }
 }
 header .container nav ul {
   display: flex;
@@ -108,4 +118,69 @@ header .container input {
   border-radius: 40px;
   background: rgba(217, 217, 217, 0.5);
   cursor: pointer;
+}
+@media (max-width: 600px) {
+  header .container input {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  header .container .first {
+    display: none;
+  }
+}
+header .container .last {
+  display: none;
+}
+@media (max-width: 1065px) {
+  header .container .last {
+    display: inline-flex;
+  }
+}
+
+section {
+  background-image: url("../images/akhaltsikhe.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 615px;
+  background-size: cover;
+}
+section h1 {
+  color: #FFF;
+  text-align: center;
+  font-family: "Judson", serif;
+  font-size: 70px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  width: 100%;
+  height: 430px;
+  flex-shrink: 0;
+  background-color: #E4E4E4;
+  padding: 35px 40px 24px;
+}
+footer div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+footer div h2 {
+  color: #000;
+  font-family: "Kaisei Decol", serif;
+  font-size: 32px;
+  font-weight: 400;
+}
+footer h4 {
+  color: #000;
+  font-family: Kameron;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 13px;
 }/*# sourceMappingURL=global.css.map */
