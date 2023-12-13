@@ -1,0 +1,53 @@
+header{
+    height: 136px;
+    padding-top: 27px;
+    .container{
+            @include container;
+            // border: 2px solid red;
+            display: flex;
+            justify-content: space-between;
+            div{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                h2{
+                    color: #000;
+                    font-family: 'Kaisei Decol', serif;font-size: 32px;
+                    font-weight: 400;
+                }
+            }
+           
+            nav{
+                width: 500px;
+                border: 2ps solid rgb(59, 154, 59);
+                ul{
+                    display: flex;
+                    justify-content: space-between;
+                    li{
+                        a{
+                            color: #000;
+                            font-family: 'Judson', serif;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            &:hover{
+                                border-bottom: 2px solid black;
+                                transition: 0.5s;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+            input{
+                width: 188px;
+                height: 21px;
+                flex-shrink: 0;
+                border-radius: 40px;
+                background: rgba(217, 217, 217, 0.50);
+                cursor: pointer;
+
+            }
+    }
+  }
