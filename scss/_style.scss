@@ -1,9 +1,9 @@
 header{
     height: 136px;
-    padding-top: 27px;
-    // border: 2px solid red;
+    // padding-top: 27px;
     .container{
             @include container;
+            height: 136px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -19,7 +19,6 @@ header{
            
             nav{
                 width: 500px;
-                // border: 2ps solid rgb(59, 154, 59);
                 @media (max-width: 1065px) {
                     display: none;
                 }
@@ -36,7 +35,6 @@ header{
                             line-height: normal;
                             &:hover{
                                 border-bottom: 2px solid black;
-                                transition: 0.5s;
                             }
                         }
                     }
@@ -48,11 +46,21 @@ header{
                 height: 21px;
                 flex-shrink: 0;
                 border-radius: 40px;
+                padding: 5px 12px;
+                border: none;
+                outline: none;
                 background: rgba(217, 217, 217, 0.50);
                 cursor: pointer;
                 @media (max-width: 600px) {
                     display: none;
                 }
+                
+            }
+            ::placeholder{
+                color: #000000;
+                font-family: 'Judson', serif;
+                font-size: 12px;
+                font-weight: 400;
             }
             .first{
                 @media (max-width: 600px) {
@@ -68,43 +76,143 @@ header{
     }
   }
 
+
   section{
-    // border: 2px solid black;
     background-image: url("../images/akhaltsikhe.jpg");
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
     height: 615px;
     background-size: cover;
+    display: flex;
+      justify-content: center;
+      align-items: center;
     h1{
-        // border: 3px dotted green;
         color: #FFF;
         text-align: center;
         font-family: 'Judson', serif;
         font-size: 70px;
         font-weight: 700;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-            }
+        @media (max-width: 465px) {
+            font-size: 50px;
+        }
+        }
   }
 
 
   footer{
-    width: 100%;
+    max-width: 100%;
     height: 430px;
     flex-shrink: 0;
     background-color: #E4E4E4;
     padding: 35px 40px 24px;
+           .container{
+            display: flex;
+            justify-content: space-between;
+            @include container;
+            a{
+                img{
+                    width: 150px;
+                    height: 60px;
+                    &:hover{
+                        background-color: white;
+                        border: 1px solid lightblue
+                    }
+                }
+            }
+            h4{
+                @include myh;
+                margin-top: 13px;
+                margin-bottom: 27px;
+            }
+            li{
+                color: #020202;
+                font-family: 'Judson', serif;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-top: 17px;
     
-    div{
-        @include logo;
-        h2{
-            @include mylogo;
-        }
-    }
-    h4{
-        @include myh;
-        margin-top: 13px;
-    }
-  }
+            }
+            .fdiv1{
+                max-width: 500px;
+                // border: 1px dotted red;
+                display: flex;
+                justify-content: space-around;
+                .help{
+        
+                    h5{
+                        color: #000;
+                        font-family: 'Lora', serif;
+                        font-size: 25px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        margin-bottom: 5px;
+                    }
+                    div{
+                       max-width: 173px;
+                        height: 1px;
+                        background-color: #000;
+                        margin-bottom: 17px;
+                    }
+                    
+                        li{
+                            color: #000;
+                            font-family: 'Kameron', serif;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            margin-top: 17px;
+                            margin-bottom: 17px;
+                        } 
+    
+                   
+                }
+                
+            }
+                .contact{
+
+                    h5{
+                        color: #000;
+                        font-family: 'Lora', serif;
+                        font-size: 25px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        margin-bottom: 5px;
+                    }
+                    div{
+                        width: 173px;
+                        height: 1px;
+                        background-color: #000;
+                        margin-bottom: 17px;
+                    }
+                    
+                        li{
+                            color: #000;
+                            font-family: 'Kameron', serif;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            margin-top: 17px;
+                            margin-bottom: 17px;
+                        } 
+    
+                   
+                }
+                .icons{
+                    max-width: 142px;
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 15px;
+                }
+           }
+                
+}
+            
+        
+       
