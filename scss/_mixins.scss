@@ -20,3 +20,17 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 }
+@mixin emailtext{
+    color: #000;
+    font-family: 'Karma', serif;font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+@mixin buttext{
+    color: #FFF;
+     font-family: 'Karma', serif;font-size: 18px;
+     font-style: normal;
+    font-weight: 400;
+     line-height: normal;
+}

@@ -37,6 +37,9 @@ header{
                                 border-bottom: 2px solid black;
                             }
                         }
+                        .main{
+                            font-weight: 700;
+                        }
                     }
                     
                 }
@@ -102,7 +105,6 @@ header{
 
   footer{
     max-width: 100%;
-    height: 430px;
     flex-shrink: 0;
     background-color: #E4E4E4;
     padding: 35px 40px 24px;
@@ -110,13 +112,18 @@ header{
             display: flex;
             justify-content: space-between;
             @include container;
+            flex-wrap: wrap;
+            @media (max-width:1010px) {
+                justify-content: flex-start;
+                flex-direction: column;
+                gap: 60px;
+            }
             a{
                 img{
                     width: 150px;
                     height: 60px;
                     &:hover{
-                        background-color: white;
-                        border: 1px solid lightblue
+                        transform: scale(1.1)
                     }
                 }
             }
@@ -125,21 +132,40 @@ header{
                 margin-top: 13px;
                 margin-bottom: 27px;
             }
-            li{
+            nav{
+                li{
+                    margin-top: 17px;
+
+                    a{
+                        color: #020202;
+                        font-family: 'Judson', serif;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                   
+                }
+                
+    
+            }
+            h5{
                 color: #020202;
                 font-family: 'Judson', serif;
                 font-size: 20px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
-                margin-top: 17px;
-    
             }
             .fdiv1{
                 max-width: 500px;
-                // border: 1px dotted red;
+                width: 100%;
                 display: flex;
-                justify-content: space-around;
+                justify-content: space-between;
+                @media (max-width: 500px) {
+                    flex-direction: column;
+                    gap: 20px;
+                }
                 .help{
         
                     h5{
@@ -174,7 +200,7 @@ header{
                 
             }
                 .contact{
-
+                       
                     h5{
                         color: #000;
                         font-family: 'Lora', serif;
@@ -204,12 +230,77 @@ header{
     
                    
                 }
-                .icons{
-                    max-width: 142px;
+                .icd{
+                    width: 142px;
                     display: flex;
                     justify-content: space-between;
                     gap: 15px;
+                    
+                    
                 }
+                .inputd{
+                    width: 100%;
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: flex-end;
+                    height: 100px;
+                   
+                    .divin{
+                        width: 500px;
+                        display: flex;
+                        justify-content: flex-start;
+                        flex-direction: column;
+                        label{
+                            color: #000;
+                            font-family: Karla;
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            margin-top: 11px;
+                            
+                        }
+                         div{
+                            display: flex;
+                            justify-content: space-between;
+                            max-width: 500px;
+                            width: 100%;
+                            @media (max-width: 580px) {
+                                flex-direction: column;
+                                gap: 10px;
+                            }
+                            input[type=email]{
+                                width: 339px;
+                                height: 40px;
+                                flex-shrink: 0;
+                                border-radius: 12px;
+                                border: 1px solid #000;
+                                background: #FFF;
+                                padding: 7px 122px 4px 11px;
+                                @include emailtext;
+                                @media (max-width: 425px) {
+                                    width: 300px;
+                                    padding: 7px;
+                                }
+                            }
+                            input[type=submit]{
+                                width: 148px;
+                                height: 40px;
+                                flex-shrink: 0;
+                                border-radius: 12px;
+                                background: #273A47;
+                                cursor: pointer;
+                                padding: 9px 17px 5px 16px;
+                                border: none;
+                                @include buttext;
+                              
+                            }
+                    }
+                   
+                     }
+                    
+                }
+                
            }
                 
 }
