@@ -65,6 +65,7 @@ header {
 }
 header .container {
   max-width: 1255px;
+  width: 100%;
   margin: 0 auto;
   height: 136px;
   display: flex;
@@ -149,7 +150,7 @@ header .container .last {
   }
 }
 
-section {
+.s1 {
   background-image: url("../images/akhaltsikhe.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -160,7 +161,7 @@ section {
   justify-content: center;
   align-items: center;
 }
-section h1 {
+.s1 h1 {
   color: #FFF;
   text-align: center;
   font-family: "Judson", serif;
@@ -168,9 +169,142 @@ section h1 {
   font-weight: 700;
 }
 @media (max-width: 465px) {
-  section h1 {
+  .s1 h1 {
     font-size: 50px;
   }
+}
+
+.s2 {
+  width: 100%;
+}
+.s2 .container {
+  max-width: 1255px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+@media (max-width: 1325px) {
+  .s2 .container {
+    max-width: 90%;
+  }
+}
+.s2 .container .topic {
+  max-width: 950px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 98px;
+}
+.s2 .container .topic div {
+  width: 253px;
+  height: 1px;
+  stroke-width: 1px;
+  background-color: #000;
+}
+@media (max-width: 1065px) {
+  .s2 .container .topic div {
+    width: 200px;
+  }
+}
+@media (max-width: 795px) {
+  .s2 .container .topic div {
+    width: 150px;
+  }
+}
+@media (max-width: 606px) {
+  .s2 .container .topic div {
+    width: 100px;
+  }
+}
+@media (max-width: 442px) {
+  .s2 .container .topic div {
+    width: 70px;
+  }
+}
+@media (max-width: 370px) {
+  .s2 .container .topic div {
+    width: 50px;
+  }
+}
+.s2 .container .topic h3 {
+  color: #000;
+  font-family: "Judson", serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media (max-width: 930px) {
+  .s2 .container .topic h3 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 666px) {
+  .s2 .container .topic h3 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 503px) {
+  .s2 .container .topic h3 {
+    font-size: 15px;
+  }
+}
+@media (max-width: 442px) {
+  .s2 .container .topic h3 {
+    font-size: 14px;
+  }
+}
+.s2 .container .card {
+  max-width: 1062px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 102px;
+  margin-bottom: 150px;
+  gap: 20px;
+}
+@media (max-width: 1160px) {
+  .s2 .container .card {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 760px) {
+  .s2 .container .card {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.s2 .container .card div {
+  height: 436px;
+  display: flex;
+  flex-direction: column;
+}
+.s2 .container .card div img {
+  width: 324px;
+  display: contain;
+}
+.s2 .container .card div h3 {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.s3 {
+  width: 100%;
+}
+.s3 div {
+  width: 100%;
+  height: 578px;
+  background-image: url("");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 footer {
@@ -183,8 +317,14 @@ footer .container {
   display: flex;
   justify-content: space-between;
   max-width: 1255px;
+  width: 100%;
   margin: 0 auto;
   flex-wrap: wrap;
+}
+@media (max-width: 1325px) {
+  footer .container {
+    max-width: 90%;
+  }
 }
 @media (max-width: 1010px) {
   footer .container {
@@ -346,10 +486,21 @@ footer .container .inputd .divin div input[type=email] {
   font-weight: 400;
   line-height: normal;
 }
-@media (max-width: 425px) {
+@media (max-width: 460px) {
   footer .container .inputd .divin div input[type=email] {
     width: 300px;
     padding: 7px;
+  }
+}
+@media (max-width: 420px) {
+  footer .container .inputd .divin div input[type=email] {
+    width: 250px;
+    padding: 7px;
+  }
+}
+@media (max-width: 375px) {
+  footer .container .inputd .divin div input[type=email] {
+    width: 200px;
   }
 }
 footer .container .inputd .divin div input[type=submit] {
@@ -367,4 +518,9 @@ footer .container .inputd .divin div input[type=submit] {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+@media (max-width: 375px) {
+  footer .container .inputd .divin div input[type=submit] {
+    width: 100px;
+  }
 }/*# sourceMappingURL=global.css.map */

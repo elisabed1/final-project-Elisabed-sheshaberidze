@@ -7,9 +7,6 @@ header{
             display: flex;
             justify-content: space-between;
             align-items: center;
-            @media (max-width: 1325px) {
-                max-width: 90%;
-            }
             div{
                 @include logo;
                 h2{
@@ -80,7 +77,7 @@ header{
   }
 
 
-  section{
+  .s1{
     background-image: url("../images/akhaltsikhe.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -100,6 +97,113 @@ header{
             font-size: 50px;
         }
         }
+  }
+
+  .s2{ width: 100%;
+        .container{
+            @include container;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+                .topic{
+                    max-width: 950px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    margin-top: 98px;
+                   div{
+                    width: 253px;
+                    height: 1px;
+                    stroke-width: 1px;
+                    background-color: #000;
+                    @media (max-width: 1065px) {
+                        width: 200px;
+                    }
+                    @media (max-width:795px) {
+                        width: 150px;
+                    }
+                    @media (max-width:606px) {
+                        width: 100px;
+                    }
+                    @media (max-width:442px) {
+                        width: 70px;
+                    }
+                    @media (max-width: 370px) {
+                        width: 50px;
+                    }
+                   }
+                   h3{
+                    color: #000;
+                    font-family: 'Judson', serif;
+                    font-size: 36px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    @media (max-width: 930px) {
+                        font-size: 25px;
+                    }
+                    @media (max-width:666px) {
+                        font-size: 20px;
+                    }
+                    @media (max-width:503px) {
+                        font-size: 15px;
+                    }
+                    @media (max-width:442px) {
+                        font-size: 14px;
+                    }
+                   }
+                }
+                .card{
+                    max-width: 1062px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 102px;
+                    margin-bottom: 150px;
+                    gap: 20px;
+                    @media (max-width: 1160px) {
+                        flex-wrap: wrap;
+                    }
+                    @media (max-width: 760px) {
+                    flex-direction: column; 
+                    align-items: center;
+                    }
+                    div{
+                        height: 436px;
+                        display: flex;
+                        flex-direction: column;
+                        img{
+                            width: 324px;
+                            display: contain;
+                        }
+                        h3{
+                            color: #000;
+                            font-family: 'Roboto', sans-serif;
+                            font-size: 25px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+                    }
+                }
+            
+        }
+  }
+
+
+  .s3{
+    width: 100%;
+    div{
+        width: 100%;
+        height: 578px;
+        background-image: url("");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
   }
 
 
@@ -278,9 +382,16 @@ header{
                                 background: #FFF;
                                 padding: 7px 122px 4px 11px;
                                 @include emailtext;
-                                @media (max-width: 425px) {
+                                @media (max-width: 460px) {
                                     width: 300px;
                                     padding: 7px;
+                                }
+                                @media (max-width: 420px) {
+                                    width: 250px;
+                                    padding: 7px;
+                                }
+                                @media (max-width: 375px) {
+                                    width: 200px;
                                 }
                             }
                             input[type=submit]{
@@ -293,6 +404,9 @@ header{
                                 padding: 9px 17px 5px 16px;
                                 border: none;
                                 @include buttext;
+                                @media (max-width: 375px) {
+                                    width: 100px;
+                                }
                               
                             }
                     }
