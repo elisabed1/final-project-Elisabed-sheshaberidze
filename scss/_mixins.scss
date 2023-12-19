@@ -39,3 +39,52 @@ line-height: normal;
     font-weight: 400;
      line-height: normal;
 }
+@mixin responsivs2-1{
+    @media (max-width: 1065px) {
+        width: 200px;
+    }
+    @media (max-width:795px) {
+        width: 150px;
+    }
+    @media (max-width:606px) {
+        width: 100px;
+    }
+    @media (max-width:442px) {
+        width: 70px;
+    }
+    @media (max-width: 370px) {
+        width: 50px;
+    }
+}
+@mixin responsives2-2{
+    @media (max-width: 930px) {
+        font-size: 25px;
+    }
+    @media (max-width:666px) {
+        font-size: 20px;
+    }
+    @media (max-width:503px) {
+        font-size: 15px;
+    }
+    @media (max-width:442px) {
+        font-size: 14px;
+    }
+}
+
+@mixin responsives3-1{
+    @media (max-width: 885px) {
+                    height: 150px;
+                }
+                @media (max-width: 630px) {
+                    height: 175px;
+                }
+                @media (max-width: 505px) {
+                    height: 190px;
+                }
+                @media (max-width: 445px) {
+                    height: 210px;
+                }
+                @media (max-width: 400px) {
+                    height: 240px;
+                }
+}

@@ -203,31 +203,7 @@ header .container .last {
   height: 1px;
   stroke-width: 1px;
   background-color: #000;
-}
-@media (max-width: 1065px) {
-  .s2 .container .topic div {
-    width: 200px;
-  }
-}
-@media (max-width: 795px) {
-  .s2 .container .topic div {
-    width: 150px;
-  }
-}
-@media (max-width: 606px) {
-  .s2 .container .topic div {
-    width: 100px;
-  }
-}
-@media (max-width: 442px) {
-  .s2 .container .topic div {
-    width: 70px;
-  }
-}
-@media (max-width: 370px) {
-  .s2 .container .topic div {
-    width: 50px;
-  }
+  @in;
 }
 .s2 .container .topic h3 {
   color: #000;
@@ -297,27 +273,18 @@ header .container .last {
 
 .s3 {
   width: 100%;
+  background-color: #273A47;
 }
-.s3 .container {
-  max-width: 1255px;
+.s3 .s2b {
   width: 100%;
-  margin: 0 auto;
-}
-@media (max-width: 1325px) {
-  .s3 .container {
-    max-width: 90%;
-  }
-}
-.s3 .container .s2b {
-  width: 100%;
-  height: 578px;
   background-image: url("../images/download (1).png");
   background-repeat: repeat;
+  height: 578px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.s3 .container .s2b div {
+.s3 .s2b div {
   width: 400px;
   height: 255px;
   display: flex;
@@ -325,7 +292,12 @@ header .container .last {
   justify-content: space-between;
   align-items: center;
 }
-.s3 .container .s2b div h5 {
+@media (max-width: 495px) {
+  .s3 .s2b div {
+    height: 150px;
+  }
+}
+.s3 .s2b div h5 {
   color: #FFF;
   text-align: center;
   font-family: Judson sans-serif;
@@ -334,12 +306,12 @@ header .container .last {
   font-weight: 700;
   line-height: normal;
 }
-@media (max-width: 445px) {
-  .s3 .container .s2b div h5 {
-    font-size: 40px;
+@media (max-width: 495px) {
+  .s3 .s2b div h5 {
+    font-size: 22px;
   }
 }
-.s3 .container .s2b div .quiz {
+.s3 .s2b div .quiz {
   width: 241.446px;
   height: 60px;
   width: 175px;
@@ -354,57 +326,57 @@ header .container .last {
   font-weight: 400;
   line-height: normal;
 }
-.s3 .container .s2b div .quiz:hover {
+.s3 .s2b div .quiz:hover {
   cursor: pointer;
 }
-.s3 .container .col {
+.s3 .container {
+  max-width: 1255px;
+  width: 100%;
+  margin: 0 auto;
   height: 333px;
-  background-color: #273A47;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 705px) {
-  .s3 .container .col {
-    justify-content: center;
-    align-items: center;
+@media (max-width: 1325px) {
+  .s3 .container {
+    max-width: 90%;
   }
 }
-.s3 .container .col div {
+.s3 .container div {
   height: 110px;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
 }
-@media (max-width: 1295px) {
-  .s3 .container .col div {
-    width: 900px;
-  }
-}
-@media (max-width: 1030px) {
-  .s3 .container .col div {
-    width: 600px;
-  }
-}
-@media (max-width: 1030px) {
-  .s3 .container .col div {
+@media (max-width: 885px) {
+  .s3 .container div {
     height: 150px;
   }
 }
-@media (max-width: 705px) {
-  .s3 .container .col div {
-    height: 200px;
+@media (max-width: 630px) {
+  .s3 .container div {
+    height: 175px;
+  }
+}
+@media (max-width: 505px) {
+  .s3 .container div {
+    height: 190px;
   }
 }
 @media (max-width: 445px) {
-  .s3 .container .col div {
-    height: 300px;
-    width: 300px;
+  .s3 .container div {
+    height: 210px;
   }
 }
-.s3 .container .col div p {
-  width: 1140px;
+@media (max-width: 400px) {
+  .s3 .container div {
+    height: 240px;
+  }
+}
+.s3 .container div p {
+  max-width: 1140px;
   height: 45px;
   flex-shrink: 0;
   color: #FFF;
@@ -415,27 +387,12 @@ header .container .last {
   font-weight: 400;
   line-height: normal;
 }
-@media (max-width: 1295px) {
-  .s3 .container .col div p {
-    width: 900px;
-  }
+.s3 .container div .h {
+  max-width: 562px;
+  display: flex;
+  justify-content: end;
 }
-@media (max-width: 1030px) {
-  .s3 .container .col div p {
-    width: 600px;
-  }
-}
-@media (max-width: 705px) {
-  .s3 .container .col div p {
-    width: 400px;
-  }
-}
-@media (max-width: 445px) {
-  .s3 .container .col div p {
-    width: 300px;
-  }
-}
-.s3 .container .col div h6 {
+.s3 .container div .h h6 {
   color: #FFF;
   font-family: Karma sans-serif;
   font-size: 22px;
