@@ -1,0 +1,84 @@
+.s1g{
+    background-image: url("../../images/galley.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 615px;
+    background-size: cover;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     
+    h1{
+       
+        color: #FFF;
+        text-align: center;
+        font-family: 'Judson', serif;
+        font-size: 70px;
+        font-weight: 700;
+        @media (max-width: 465px) {
+            font-size: 50px;
+        }
+        }
+  }
+
+.s2g{
+    width: 100%;
+        .container{
+            @include container;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+                .topic{
+                    max-width: 950px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-top: 98px;
+                   div{
+                    width: 253px;
+                    height: 1px;
+                    stroke-width: 1px;
+                    background-color: #000;
+                    @media (max-width: 930px) {
+                        font-size: 25px;
+                    }
+                    @media (max-width:666px) {
+                        font-size: 20px;
+                    }
+                    @media (max-width:503px) {
+                        font-size: 15px;
+                    }
+                    @media (max-width:442px) {
+                        font-size: 14px;
+                    }
+                   }
+                   h3{
+                    color: #000;
+                    font-family: 'Judson', serif;
+                    font-size: 36px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    @media (max-width: 1065px) {
+                        width: 200px;
+                    }
+                    @media (max-width:795px) {
+                        width: 150px;
+                    }
+                    @media (max-width:606px) {
+                        width: 100px;
+                    }
+                    @media (max-width:442px) {
+                        width: 70px;
+                    }
+                    @media (max-width: 370px) {
+                        width: 50px;
+                    }
+                   }
+                }
+}
+
+}

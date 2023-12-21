@@ -1,0 +1,213 @@
+.s1a{
+    background-image: url("../../images/about\ us");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 615px;
+    background-size: cover;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     
+    h1{
+       
+        color: #000000;
+        text-align: center;
+        font-family: 'Judson', serif;
+        font-size: 70px;
+        font-weight: 700;
+        @media (max-width: 465px) {
+            font-size: 50px;
+        }
+        }
+  }
+
+.s2a{
+    width: 100%;
+    .container{
+        @include container;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .topic{
+            max-width: 950px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 98px;
+           div{
+            width: 253px;
+            height: 1px;
+            stroke-width: 1px;
+            background-color: #000;
+            @media (max-width: 1065px) {
+                width: 200px;
+            }
+            @media (max-width:795px) {
+                width: 150px;
+            }
+            @media (max-width:606px) {
+                width: 100px;
+            }
+            @media (max-width:442px) {
+                width: 70px;
+            }
+            @media (max-width: 370px) {
+                width: 50px;
+            }
+           
+           }
+           h3{
+            color: #000;
+            font-family: 'Judson', serif;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            @media (max-width: 930px) {
+                font-size: 25px;
+            }
+            @media (max-width:666px) {
+                font-size: 23px;
+            }
+            @media (max-width:503px) {
+                font-size: 20px;
+            }
+            @media (max-width:442px) {
+                font-size: 20px;
+            }
+           
+           }
+        }
+        .carda{
+                max-width: 1062px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 102px;
+                margin-bottom: 150px;
+                gap: 20px; 
+                @media (max-width: 1050px) {
+                    flex-wrap: wrap;
+                }
+                @media (max-width:845px) {
+                    justify-content: center;
+                }
+                .cardin{
+                    max-width: 370px;
+                    width: 100%;
+                    height: 350px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                   
+                    div{
+                        width: 192px;
+                        height: 192px;
+                        flex-shrink: 0;
+                        background-color: #273A47;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-bottom: 32px;
+                        @media (max-width:440px) {
+                            width: 150px;
+                            height:150px;
+                        }
+                        h3{
+                            color: #FFF;
+                            font-family: 'Kaisei Decol', serif;
+                            font-size: 30px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        @media (max-width:440px) {
+                            font-size: 25px;
+                            
+                        }
+                        }
+                }
+                }         
+                p{
+                    color: #000;
+                    text-align: center;
+                    font-family: 'Kaisei Decol', serif;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    @media (max-width:440px) {
+                        font-size: 18px;
+                    }
+
+                }
+        }
+    }
+}
+.s3a{
+    width: 100%;
+    // height: 523px;
+    background-image: url("../../images/guide"); 
+    object-fit: contain; 
+    margin-bottom: 190px;
+    background-position: center;
+    background-repeat: no-repeat;
+    .container{
+        @include container;
+        div{
+            width: 50%;
+            background-color: rgba(0, 0, 0, 0.50);     
+            height: 523px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            padding: 10px;
+            @media (max-width: 850px) {
+                width: 70%;
+            }
+           
+                h4{
+                    width: 200px;
+                    height: 42px;
+                    flex-shrink: 0;
+                    color: #FFF;
+                    text-align: center;
+                    font-family: Kadwa;
+                    font-size: 30px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    @media (max-width: 560px) {
+                        font-size: 25px;
+                      }
+                      @media (max-width: 435px) {
+                        font-size: 20px;
+                      }
+                }
+                p{
+                    max-width: 577px;
+                    height: 287px;
+                    flex-shrink: 0;
+                    color: #FFF;
+                    font-family: Kadwa;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    @media (max-width: 560px) {
+                      font-size: 17px;
+                    }
+                    @media (max-width: 435px) {
+                        font-size: 14px;
+                      }
+                }
+            }
+        
+    }    
+        
+    }
+        
+    
