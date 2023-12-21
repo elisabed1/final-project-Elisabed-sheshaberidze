@@ -568,20 +568,20 @@ footer .container .icd {
   justify-content: space-between;
   gap: 15px;
 }
-footer .container .inputd {
+footer .inputd {
   width: 100%;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
   height: 100px;
 }
-footer .container .inputd .divin {
+footer .inputd .divin {
   width: 500px;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
 }
-footer .container .inputd .divin label {
+footer .inputd .divin label {
   color: #000;
   font-family: Karla;
   font-size: 12px;
@@ -590,19 +590,19 @@ footer .container .inputd .divin label {
   line-height: normal;
   margin-top: 11px;
 }
-footer .container .inputd .divin div {
+footer .inputd .divin div {
   display: flex;
   justify-content: space-between;
   max-width: 500px;
   width: 100%;
 }
 @media (max-width: 580px) {
-  footer .container .inputd .divin div {
+  footer .inputd .divin div {
     flex-direction: column;
     gap: 10px;
   }
 }
-footer .container .inputd .divin div input[type=email] {
+footer .inputd .divin div input[type=email] {
   width: 339px;
   height: 40px;
   flex-shrink: 0;
@@ -618,23 +618,23 @@ footer .container .inputd .divin div input[type=email] {
   line-height: normal;
 }
 @media (max-width: 460px) {
-  footer .container .inputd .divin div input[type=email] {
+  footer .inputd .divin div input[type=email] {
     width: 300px;
     padding: 7px;
   }
 }
 @media (max-width: 420px) {
-  footer .container .inputd .divin div input[type=email] {
+  footer .inputd .divin div input[type=email] {
     width: 250px;
     padding: 7px;
   }
 }
 @media (max-width: 375px) {
-  footer .container .inputd .divin div input[type=email] {
+  footer .inputd .divin div input[type=email] {
     width: 200px;
   }
 }
-footer .container .inputd .divin div input[type=submit] {
+footer .inputd .divin div input[type=submit] {
   width: 148px;
   height: 40px;
   flex-shrink: 0;
@@ -651,7 +651,7 @@ footer .container .inputd .divin div input[type=submit] {
   line-height: normal;
 }
 @media (max-width: 375px) {
-  footer .container .inputd .divin div input[type=submit] {
+  footer .inputd .divin div input[type=submit] {
     width: 100px;
   }
 }
