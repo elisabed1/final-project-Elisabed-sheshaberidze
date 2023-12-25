@@ -1,26 +1,16 @@
 .s1g{
-    background-image: url("../../images/galley.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 615px;
-    background-size: cover;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     
-    h1{
-       
-        color: #FFF;
-        text-align: center;
-        font-family: 'Judson', serif;
-        font-size: 70px;
-        font-weight: 700;
-        @media (max-width: 465px) {
-            font-size: 50px;
-        }
-        }
+    div{
+        background-image: url("../../images/gallery 2.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 615px;
+        background-size: cover;
+         filter: blur(3px); 
+    }
   }
+
+
 
 .s2g{
     width: 100%;
@@ -37,22 +27,26 @@
                     justify-content: space-between;
                     align-items: center;
                     margin-top: 98px;
+                    
                    div{
                     width: 253px;
                     height: 1px;
                     stroke-width: 1px;
                     background-color: #000;
-                    @media (max-width: 930px) {
-                        font-size: 25px;
+                    @media (max-width: 800px) {
+                        width: 200px;
                     }
-                    @media (max-width:666px) {
-                        font-size: 20px;
+                    @media (max-width:640px) {
+                        width: 180px;
                     }
-                    @media (max-width:503px) {
-                        font-size: 15px;
+                    @media (max-width:565px) {
+                        width: 150px;
                     }
-                    @media (max-width:442px) {
-                        font-size: 14px;
+                    @media (max-width:460px) {
+                        width: 120px;
+                    }
+                    @media (max-width: 370px) {
+                        width: 100px;
                     }
                    }
                    h3{
@@ -62,23 +56,77 @@
                     font-style: normal;
                     font-weight: 400;
                     line-height: normal;
-                    @media (max-width: 1065px) {
-                        width: 200px;
+            
+                    @media (max-width: 800px) {
+                        font-size: 30px;
                     }
-                    @media (max-width:795px) {
-                        width: 150px;
+                    @media (max-width:590px) {
+                        font-size: 25px;
                     }
-                    @media (max-width:606px) {
-                        width: 100px;
+                    @media (max-width:496px) {
+                        font-size: 20px;
                     }
-                    @media (max-width:442px) {
-                        width: 70px;
-                    }
-                    @media (max-width: 370px) {
-                        width: 50px;
+                    @media (max-width:400px) {
+                        font-size: 14px;
                     }
                    }
                 }
 }
 
+}
+
+.s3g{
+    margin-bottom: 190px;
+    .container{
+        @include container;
+        display: flex;
+       flex-direction: column;
+        .card1{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 80px;
+            gap: 40px;
+            div{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                height: 300px;
+                img{
+                    width: 324px;
+                    height: 200px;
+                    object-fit: cover;
+                }
+                .armorial{
+                    width: 324px;
+                    height: 200px;
+                    object-fit: contain;
+                }
+                h6{
+                    color: #000;
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+                input{
+                    width: 150px;
+                    height: 30px;
+                    flex-shrink: 0;
+                    border-radius: 20px;
+                    background: #24253C;
+                    color: #FFF;
+                    font-family: 'Judson', serif;
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
 }
