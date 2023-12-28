@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -53,7 +60,8 @@ table {
 }
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 a {
@@ -68,9 +76,15 @@ header .container {
   width: 100%;
   margin: 0 auto;
   height: 136px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media (max-width: 1325px) {
   header .container {
@@ -78,8 +92,12 @@ header .container {
   }
 }
 header .container div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 10px;
 }
 header .container div h2 {
@@ -97,8 +115,12 @@ header .container nav {
   }
 }
 header .container nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 header .container nav ul li a {
   color: #000;
@@ -117,7 +139,8 @@ header .container nav ul li .main {
 header .container input {
   width: 188px;
   height: 21px;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   border-radius: 40px;
   padding: 5px 12px;
   border: none;
@@ -132,6 +155,30 @@ header .container input:hover {
   header .container input {
     display: none;
   }
+}
+header .container ::-webkit-input-placeholder {
+  color: #000000;
+  font-family: "Judson", serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+header .container ::-moz-placeholder {
+  color: #000000;
+  font-family: "Judson", serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+header .container :-ms-input-placeholder {
+  color: #000000;
+  font-family: "Judson", serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+header .container ::-ms-input-placeholder {
+  color: #000000;
+  font-family: "Judson", serif;
+  font-size: 12px;
+  font-weight: 400;
 }
 header .container ::placeholder {
   color: #000000;
@@ -149,6 +196,8 @@ header .container .last {
 }
 @media (max-width: 1065px) {
   header .container .last {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
   }
 }
@@ -160,9 +209,15 @@ header .container .last {
   width: 100%;
   height: 615px;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .s1 h1 {
   color: #FFF;
@@ -184,9 +239,16 @@ header .container .last {
   max-width: 1255px;
   width: 100%;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 @media (max-width: 1325px) {
   .s2 .container {
@@ -196,9 +258,15 @@ header .container .last {
 .s2 .container .topic {
   max-width: 950px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 98px;
 }
 .s2 .container .topic div {
@@ -263,35 +331,58 @@ header .container .last {
 .s2 .container .card {
   max-width: 1062px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 102px;
   margin-bottom: 150px;
   gap: 20px;
 }
 @media (max-width: 1160px) {
   .s2 .container .card {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 @media (max-width: 760px) {
   .s2 .container .card {
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 40px;
   }
 }
 .s2 .container .card a {
   height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 .s2 .container .card a:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
-  box-shadow: rgba(136, 136, 143, 0.2) 0px 7px 29px 0px;
+  -webkit-box-shadow: rgba(136, 136, 143, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(136, 136, 143, 0.2) 0px 7px 29px 0px;
 }
 .s2 .container .card a img {
   width: 324px;
@@ -317,17 +408,32 @@ header .container .last {
   background-image: url("../images/download (1).png");
   background-repeat: repeat;
   height: 578px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .s3 .s2b div {
   width: 400px;
   height: 255px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media (max-width: 495px) {
   .s3 .s2b div {
@@ -355,7 +461,8 @@ header .container .last {
   background-color: #273A47;
   border: white;
   height: 40px;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   color: #FFF;
   font-family: Jomolhari;
   font-size: 25px;
@@ -371,9 +478,15 @@ header .container .last {
   width: 100%;
   margin: 0 auto;
   height: 333px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media (max-width: 1325px) {
   .s3 .container {
@@ -382,10 +495,19 @@ header .container .last {
 }
 .s3 .container div {
   height: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media (max-width: 885px) {
   .s3 .container div {
@@ -415,7 +537,8 @@ header .container .last {
 .s3 .container div p {
   max-width: 1140px;
   height: 45px;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   color: #FFF;
   text-align: center;
   font-family: Karma sans-serif;
@@ -426,8 +549,12 @@ header .container .last {
 }
 .s3 .container div .h {
   max-width: 562px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 .s3 .container div .h h6 {
   color: #FFF;
@@ -440,17 +567,23 @@ header .container .last {
 
 footer {
   max-width: 100%;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   background-color: #E4E4E4;
   padding: 35px 40px 24px;
 }
 footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   max-width: 1255px;
   width: 100%;
   margin: 0 auto;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 @media (max-width: 1325px) {
   footer .container {
@@ -459,8 +592,13 @@ footer .container {
 }
 @media (max-width: 1010px) {
   footer .container {
-    justify-content: flex-start;
-    flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 60px;
   }
 }
@@ -469,7 +607,9 @@ footer .container a img {
   height: 60px;
 }
 footer .container a img:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 footer .container h4 {
   color: #000;
@@ -494,6 +634,8 @@ footer .container nav li a {
 }
 footer .container nav li a:hover {
   color: #4d4a4a;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
 }
 footer .container h5 {
@@ -507,12 +649,19 @@ footer .container h5 {
 footer .container .fdiv1 {
   max-width: 500px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media (max-width: 500px) {
   footer .container .fdiv1 {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 20px;
   }
 }
@@ -570,8 +719,12 @@ footer .container .contact li {
 }
 footer .container .icd {
   width: 142px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   gap: 15px;
 }
 @media (max-width: 1112px) {
@@ -581,16 +734,29 @@ footer .container .icd {
 }
 footer .inputd {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   height: 100px;
 }
 footer .inputd .divin {
   width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 footer .inputd .divin label {
   color: #000;
@@ -602,21 +768,29 @@ footer .inputd .divin label {
   margin-top: 11px;
 }
 footer .inputd .divin div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   max-width: 500px;
   width: 100%;
 }
 @media (max-width: 580px) {
   footer .inputd .divin div {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 10px;
   }
 }
 footer .inputd .divin div input[type=email] {
   width: 339px;
   height: 40px;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   border-radius: 12px;
   border: 1px solid #000;
   background: #FFF;
@@ -648,7 +822,8 @@ footer .inputd .divin div input[type=email] {
 footer .inputd .divin div input[type=submit] {
   width: 148px;
   height: 40px;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   border-radius: 12px;
   background: #273A47;
   cursor: pointer;
@@ -663,6 +838,8 @@ footer .inputd .divin div input[type=submit] {
 }
 footer .inputd .divin div input[type=submit]:hover {
   background: #494a60;
+  -webkit-transition: 0, 9s;
+  -o-transition: 0, 9s;
   transition: 0, 9s;
 }
 @media (max-width: 375px) {
@@ -678,9 +855,15 @@ footer .inputd .divin div input[type=submit]:hover {
   width: 100%;
   height: 615px;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .s1a h1 {
   color: #000000;
@@ -702,9 +885,16 @@ footer .inputd .divin div input[type=submit]:hover {
   max-width: 1255px;
   width: 100%;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 @media (max-width: 1325px) {
   .s2a .container {
@@ -714,9 +904,15 @@ footer .inputd .divin div input[type=submit]:hover {
 .s2a .container .topic {
   max-width: 950px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 98px;
 }
 .s2a .container .topic div {
@@ -781,39 +977,60 @@ footer .inputd .divin div input[type=submit]:hover {
 .s2a .container .carda {
   max-width: 1062px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 102px;
   margin-bottom: 150px;
   gap: 20px;
 }
 @media (max-width: 1050px) {
   .s2a .container .carda {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 @media (max-width: 845px) {
   .s2a .container .carda {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 .s2a .container .carda .cardin {
   max-width: 370px;
   width: 100%;
   height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .s2a .container .carda .cardin div {
   width: 192px;
   height: 192px;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   background-color: #273A47;
   border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 32px;
 }
 @media (max-width: 440px) {
@@ -853,7 +1070,8 @@ footer .inputd .divin div input[type=submit]:hover {
 .s3a {
   width: 100%;
   background-image: url("../../images/guide");
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   margin-bottom: 190px;
   background-position: center;
   background-repeat: no-repeat;
@@ -872,10 +1090,18 @@ footer .inputd .divin div input[type=submit]:hover {
   width: 50%;
   background-color: rgba(0, 0, 0, 0.5);
   height: 523px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 10px;
 }
 @media (max-width: 850px) {
@@ -886,7 +1112,8 @@ footer .inputd .divin div input[type=submit]:hover {
 .s3a .container div h4 {
   width: 200px;
   height: 42px;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   color: #FFF;
   text-align: center;
   font-family: Kadwa;
@@ -908,7 +1135,8 @@ footer .inputd .divin div input[type=submit]:hover {
 .s3a .container div p {
   max-width: 577px;
   height: 287px;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   color: #FFF;
   font-family: Kadwa;
   font-size: 20px;
@@ -943,9 +1171,16 @@ footer .inputd .divin div input[type=submit]:hover {
   max-width: 1255px;
   width: 100%;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 @media (max-width: 1325px) {
   .s2g .container {
@@ -955,9 +1190,15 @@ footer .inputd .divin div input[type=submit]:hover {
 .s2g .container .topic {
   max-width: 950px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 98px;
 }
 .s2g .container .topic div {
@@ -1027,8 +1268,13 @@ footer .inputd .divin div input[type=submit]:hover {
   max-width: 1255px;
   width: 100%;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 @media (max-width: 1325px) {
   .s3g .container {
@@ -1037,28 +1283,43 @@ footer .inputd .divin div input[type=submit]:hover {
 }
 .s3g .container .card1 {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 80px;
   gap: 40px;
 }
 .s3g .container .card1 div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 300px;
 }
 .s3g .container .card1 div img {
   width: 324px;
   height: 200px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .s3g .container .card1 div .armorial {
   width: 324px;
   height: 200px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .s3g .container .card1 div h6 {
   color: #000;
@@ -1071,7 +1332,8 @@ footer .inputd .divin div input[type=submit]:hover {
 .s3g .container .card1 div input {
   width: 150px;
   height: 30px;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   border-radius: 20px;
   background: #24253C;
   color: #FFF;
@@ -1099,19 +1361,30 @@ footer .inputd .divin div input[type=submit]:hover {
 }
 .s2h .container .start {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 118px;
   gap: 40px;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .s2h .container .start .head {
   max-width: 460px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 5px;
 }
 .s2h .container .start .head ul li a {
@@ -1124,6 +1397,8 @@ footer .inputd .divin div input[type=submit]:hover {
 }
 .s2h .container .start .head ul li a:hover {
   color: #4d4a4a;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
 }
 .s2h .container .start .head h6 {
@@ -1134,10 +1409,18 @@ footer .inputd .divin div input[type=submit]:hover {
   max-width: 200px;
   width: 100%;
   height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .s2h .container .start .next h3 {
   color: #000;
@@ -1165,14 +1448,23 @@ footer .inputd .divin div input[type=submit]:hover {
 }
 .s2h .container .inf {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   gap: 30px;
 }
 @media (max-width: 1215px) {
   .s2h .container .inf {
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 .s2h .container .inf img {
@@ -1224,8 +1516,13 @@ footer .inputd .divin div input[type=submit]:hover {
 }
 .s2h .container .infp2 {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-bottom: 10px;
 }
 .s2h .container .infp2 p {
@@ -1255,10 +1552,16 @@ footer .inputd .divin div input[type=submit]:hover {
 .s2c .container .head {
   max-width: 300px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 5px;
   margin-bottom: 118px;
 }
@@ -1272,6 +1575,8 @@ footer .inputd .divin div input[type=submit]:hover {
 }
 .s2c .container .head ul li a:hover {
   color: #4d4a4a;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
 }
 .s2c .container .head h6 {
@@ -1280,14 +1585,23 @@ footer .inputd .divin div input[type=submit]:hover {
 }
 .s2c .container .inf {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   gap: 30px;
 }
 @media (max-width: 1215px) {
   .s2c .container .inf {
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 .s2c .container .inf img {
@@ -1339,8 +1653,13 @@ footer .inputd .divin div input[type=submit]:hover {
 }
 .s2c .container .infp2 {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-bottom: 10px;
 }
 .s2c .container .infp2 h2 {
@@ -1379,10 +1698,16 @@ footer .inputd .divin div input[type=submit]:hover {
 .s2m .container .head {
   max-width: 400px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 118px;
   gap: 5px;
 }
@@ -1396,6 +1721,8 @@ footer .inputd .divin div input[type=submit]:hover {
 }
 .s2m .container .head ul li a:hover {
   color: #4d4a4a;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
 }
 .s2m .container .head h6 {
@@ -1404,14 +1731,23 @@ footer .inputd .divin div input[type=submit]:hover {
 }
 .s2m .container .inf {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   gap: 30px;
 }
 @media (max-width: 1215px) {
   .s2m .container .inf {
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 .s2m .container .inf img {
@@ -1433,9 +1769,16 @@ footer .inputd .divin div input[type=submit]:hover {
 }
 .s2m .container .inf .infp1 {
   max-width: 730px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .s2m .container .inf .infp1 h1 {
   color: #000;
@@ -1463,7 +1806,8 @@ footer .inputd .divin div input[type=submit]:hover {
 .s2m .container .inf .infp1 a input {
   width: 250px;
   height: 30px;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   border-radius: 20px;
   background: #24253C;
   flex-shrink: 0;
@@ -1477,5 +1821,7 @@ footer .inputd .divin div input[type=submit]:hover {
 }
 .s2m .container .inf .infp1 a input:hover {
   background: #494a60;
+  -webkit-transition: 0, 9s;
+  -o-transition: 0, 9s;
   transition: 0, 9s;
-}/*# sourceMappingURL=global.css.map */
+}
