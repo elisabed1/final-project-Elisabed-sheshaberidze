@@ -1,0 +1,122 @@
+.s2c{
+    margin-top: 107px;
+    margin-bottom: 200px;
+    .container{
+        @include container;
+        .head{
+            max-width: 300px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center; 
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-bottom: 118px;
+
+            ul{
+                li{
+                    a{
+                        color: #000;
+                        font-family: 'Judson', serif;
+                        font-size: 25px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        &:hover{
+                            color: #4d4a4a;
+                            transition: 0.3s;
+                        }
+                    }
+                }
+            }
+            h6{
+                    
+                color: #000;
+                font-size: 25px;
+            }
+            
+    }
+    .inf{
+        width: 100%;
+        display: flex;
+       justify-content: space-between;
+       align-items: flex-start;
+       gap: 30px;
+       @media (max-width: 1215px) {
+            flex-direction: column-reverse;
+       }
+      
+       img{
+        width: 480px;
+        height: 380px;
+        margin-bottom: 40px;
+        @media (max-width: 680px) {
+            width: 380px;
+            height: 280px;
+        }
+        @media (max-width: 425px) {
+            width: 310px;
+            height: 210px;
+        }
+       }
+       .infp1{
+        max-width: 730px;
+        h1{
+            color: #000;
+            font-family: 'Metal', serif;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 19px
+           }
+           h3{
+            color: #000;
+            font-family: 'Kaisei Decol', serif;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 27px;
+           }
+           p{
+            color: #000;
+            font-family: 'Kameron', serif;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 15px;
+
+           }
+       }
+
+    }
+    .infp2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        h2{
+            color: #000;
+            font-family: 'Kaisei Decol', serif;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 27px;
+        }
+        p{
+            color: #000;
+            font-family: 'Kameron', serif;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 15px;
+
+           }
+      }
+}
+}
+

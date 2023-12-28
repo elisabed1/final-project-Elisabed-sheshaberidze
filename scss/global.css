@@ -1231,6 +1231,130 @@ footer .inputd .divin div input[type=submit] {
   margin-bottom: 15px;
 }
 
+.s2c {
+  margin-top: 107px;
+  margin-bottom: 200px;
+}
+.s2c .container {
+  max-width: 1255px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 1325px) {
+  .s2c .container {
+    max-width: 90%;
+  }
+}
+.s2c .container .head {
+  max-width: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 118px;
+}
+.s2c .container .head ul li a {
+  color: #000;
+  font-family: "Judson", serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.s2c .container .head ul li a:hover {
+  color: #4d4a4a;
+  transition: 0.3s;
+}
+.s2c .container .head h6 {
+  color: #000;
+  font-size: 25px;
+}
+.s2c .container .inf {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+}
+@media (max-width: 1215px) {
+  .s2c .container .inf {
+    flex-direction: column-reverse;
+  }
+}
+.s2c .container .inf img {
+  width: 480px;
+  height: 380px;
+  margin-bottom: 40px;
+}
+@media (max-width: 680px) {
+  .s2c .container .inf img {
+    width: 380px;
+    height: 280px;
+  }
+}
+@media (max-width: 425px) {
+  .s2c .container .inf img {
+    width: 310px;
+    height: 210px;
+  }
+}
+.s2c .container .inf .infp1 {
+  max-width: 730px;
+}
+.s2c .container .inf .infp1 h1 {
+  color: #000;
+  font-family: "Metal", serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 19px;
+}
+.s2c .container .inf .infp1 h3 {
+  color: #000;
+  font-family: "Kaisei Decol", serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 27px;
+}
+.s2c .container .inf .infp1 p {
+  color: #000;
+  font-family: "Kameron", serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 15px;
+}
+.s2c .container .infp2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.s2c .container .infp2 h2 {
+  color: #000;
+  font-family: "Kaisei Decol", serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 27px;
+}
+.s2c .container .infp2 p {
+  color: #000;
+  font-family: "Kameron", serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 15px;
+}
+
 .s2m {
   margin-top: 107px;
   margin-bottom: 200px;
@@ -1246,7 +1370,7 @@ footer .inputd .divin div input[type=submit] {
   }
 }
 .s2m .container .head {
-  max-width: 460px;
+  max-width: 400px;
   width: 100%;
   display: flex;
   justify-content: space-around;
