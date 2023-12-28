@@ -125,6 +125,9 @@ header .container input {
   background: rgba(217, 217, 217, 0.5);
   cursor: pointer;
 }
+header .container input:hover {
+  background-color: rgba(156, 155, 155, 0.5);
+}
 @media (max-width: 600px) {
   header .container input {
     display: none;
@@ -658,6 +661,10 @@ footer .inputd .divin div input[type=submit] {
   font-weight: 400;
   line-height: normal;
 }
+footer .inputd .divin div input[type=submit]:hover {
+  background: #494a60;
+  transition: 0, 9s;
+}
 @media (max-width: 375px) {
   footer .inputd .divin div input[type=submit] {
     width: 100px;
@@ -1009,7 +1016,7 @@ footer .inputd .divin div input[type=submit] {
 }
 @media (max-width: 400px) {
   .s2g .container .topic h3 {
-    font-size: 14px;
+    font-size: 20px;
   }
 }
 
@@ -1376,6 +1383,7 @@ footer .inputd .divin div input[type=submit] {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  margin-bottom: 118px;
   gap: 5px;
 }
 .s2m .container .head ul li a {
@@ -1394,8 +1402,80 @@ footer .inputd .divin div input[type=submit] {
   color: #000;
   font-size: 25px;
 }
-.s2m .container div {
-  margin-top: 118px;
+.s2m .container .inf {
   width: 100%;
   display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+}
+@media (max-width: 1215px) {
+  .s2m .container .inf {
+    flex-direction: column-reverse;
+  }
+}
+.s2m .container .inf img {
+  width: 480px;
+  height: 380px;
+  margin-bottom: 40px;
+}
+@media (max-width: 680px) {
+  .s2m .container .inf img {
+    width: 380px;
+    height: 280px;
+  }
+}
+@media (max-width: 425px) {
+  .s2m .container .inf img {
+    width: 310px;
+    height: 210px;
+  }
+}
+.s2m .container .inf .infp1 {
+  max-width: 730px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.s2m .container .inf .infp1 h1 {
+  color: #000;
+  font-family: "Metal", serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 19px;
+}
+@media (max-width: 425px) {
+  .s2m .container .inf .infp1 h1 {
+    font-size: 30px;
+  }
+}
+.s2m .container .inf .infp1 p {
+  color: #000;
+  font-family: "Kameron", serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 15px;
+}
+.s2m .container .inf .infp1 a input {
+  width: 250px;
+  height: 30px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #24253C;
+  flex-shrink: 0;
+  color: #FFF;
+  font-family: Jomolhari;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+}
+.s2m .container .inf .infp1 a input:hover {
+  background: #494a60;
+  transition: 0, 9s;
 }/*# sourceMappingURL=global.css.map */

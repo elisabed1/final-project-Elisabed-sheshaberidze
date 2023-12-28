@@ -50,6 +50,9 @@ header{
                 outline: none;
                 background: rgba(217, 217, 217, 0.50);
                 cursor: pointer;
+                &:hover{
+                    background-color:  rgba(156, 155, 155, 0.5);
+                }
                 @media (max-width: 600px) {
                     display: none;
                 }
@@ -531,6 +534,10 @@ header{
                                 cursor: pointer;
                                 padding: 9px 17px 5px 16px;
                                 border: none;
+                                &:hover{
+                                    background: #494a60;
+                                    transition: 0,9s;
+                                }
                                 @include buttext;
                                 @media (max-width: 375px) {
                                     width: 100px;
