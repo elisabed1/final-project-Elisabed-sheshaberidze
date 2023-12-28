@@ -1,0 +1,50 @@
+.s2m{
+    margin-top: 107px;
+    margin-bottom: 200px;
+    .container{
+        @include container;
+        .head{
+            max-width: 460px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center; 
+            flex-wrap: wrap;
+            gap: 5px;
+
+            ul{
+                li{
+                    a{
+                        color: #000;
+                        font-family: 'Judson', serif;
+                        font-size: 25px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        &:hover{
+                            color: #4d4a4a;
+                            transition: 0.3s;
+                        }
+                    }
+                }
+            }
+            h6{
+                    
+                color: #000;
+                font-size: 25px;
+            }
+            
+    }
+    div{
+        margin-top: 118px;
+        width: 100%;
+        display: flex;
+        .img{
+
+        }
+        p{
+            
+        }
+    }
+}
+}

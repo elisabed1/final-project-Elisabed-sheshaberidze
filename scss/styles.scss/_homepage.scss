@@ -172,7 +172,7 @@ header{
                     align-items: center;
                     gap: 40px;
                     }
-                    div{
+                    a{
                         height: 350px;
                         display: flex;
                         flex-direction: column;
@@ -508,7 +508,7 @@ header{
                                 border-radius: 12px;
                                 border: 1px solid #000;
                                 background: #FFF;
-                                padding: 7px 122px 4px 11px;
+                                padding: 11px;
                                 @include emailtext;
                                 @media (max-width: 460px) {
                                     width: 300px;
